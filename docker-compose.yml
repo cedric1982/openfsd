@@ -10,7 +10,7 @@ services:
       - "6809:6809/tcp"
     environment:
       DATABASE_SOURCE_NAME: /db/openfsd.db?_pragma=busy_timeout(5000)&_pragma=journal_mode(WAL)
-      DATABASE_AUTO_MIGRATE: true
+      DATABASE_AUTO_MIGRATE: "true"
     volumes:
       - sqlite:/db
 
